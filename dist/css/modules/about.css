@@ -1,0 +1,233 @@
+@import url(https://fonts.googleapis.com/css?family=Merriweather:300,400|Oswald:300,400);
+html {
+  background-color: #171524; }
+
+body {
+  background-color: #E9EDEF; }
+
+.main_header {
+  width: 100%;
+  background-color: #FFFFFF;
+  padding-bottom: .5em; }
+  .main_header .diomedes {
+    padding: 5px 0 .5em 0;
+    text-align: center;
+    text-transform: uppercase;
+    color: #171524;
+    letter-spacing: 9px;
+    font-family: Oswald, sans-serif;
+    font-size: 16px;
+    font-weight: 200; }
+  .main_header nav {
+    text-transform: uppercase;
+    font-family: Oswald, sans-serif;
+    font-size: 18px; }
+    .main_header nav ul {
+      padding: 0;
+      text-align: center; }
+    .main_header nav li {
+      margin: .5em 0;
+      list-style-type: none; }
+      .main_header nav li a {
+        color: #171524;
+        text-decoration: none;
+        font-weight: 400; }
+      .main_header nav li .contact_btn {
+        border: 1px solid #171524;
+        padding: .2rem .8rem;
+        transition: all 0.3s ease-in; }
+        .main_header nav li .contact_btn:hover {
+          background: #171524;
+          color: #FFFFFF; }
+
+#profile {
+  width: 100%; }
+  #profile ul {
+    width: 100%; }
+    #profile ul .profile_box {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      background: #FFFFFF;
+      margin-bottom: 7%;
+      box-shadow: 1px 10px 20px 0px rgba(75, 80, 87, 0.4); }
+      #profile ul .profile_box .profile_info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row-reverse;
+        background-color: #171524; }
+        #profile ul .profile_box .profile_info .profile_photo {
+          display: flex;
+          flex-direction: column;
+          margin: 0;
+          width: 100%; }
+          #profile ul .profile_box .profile_info .profile_photo img {
+            width: 100%; }
+        #profile ul .profile_box .profile_info .short_info {
+          margin-bottom: 36px;
+          display: none; }
+          #profile ul .profile_box .profile_info .short_info h1 {
+            font-family: Oswald, sans-serif;
+            font-size: 2em;
+            margin: .5em;
+            color: #4B5057; }
+
+section {
+  width: 100%;
+  background-color: #FFFFFF;
+  text-align: center;
+  padding: 7% 0 3% 0; }
+  section .about_me {
+    text-align: left; }
+    section .about_me .my_facts {
+      width: 80%;
+      margin: 0 auto;
+      padding: 3.5em 0;
+      line-height: 1.8; }
+      section .about_me .my_facts h1 {
+        font-family: Oswald, sans-serif;
+        font-weight: 400;
+        font-size: 1.65em;
+        color: #171524; }
+      section .about_me .my_facts p {
+        font-family: Merriweather, georgia, serif;
+        margin-bottom: 1em;
+        font-size: 1em;
+        font-weight: 300;
+        color: #4B5057; }
+  section .album_head h2 {
+    font-family: Oswald, sans-serif;
+    font-weight: 400;
+    font-size: 2.5em;
+    color: #171524; }
+  section .album_head p {
+    font-family: Merriweather, georgia, serif;
+    font-size: 1em;
+    font-weight: 300;
+    padding: .8em 0 .5em 0;
+    color: #4B5057; }
+
+/* LIVE PENS STYLES */
+#photo_wall {
+  width: 90%;
+  background: #FFFFFF;
+  box-shadow: 1px 10px 20px 0px rgba(75, 80, 87, 0.5);
+  padding: 0;
+  margin: 0 0 5% 5%; }
+  #photo_wall .photo_album {
+    display: flex;
+    flex-direction: column; }
+  #photo_wall img {
+    width: 100%;
+    margin-left: 0; }
+
+footer {
+  background: #171524; }
+  footer .foot_notes {
+    padding: 5em 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+    footer .foot_notes .foot_links {
+      font-family: Oswald, sans-serif;
+      text-transform: uppercase;
+      font-size: 1.2em;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center; }
+      footer .foot_notes .foot_links li {
+        padding: 1em .5em; }
+        footer .foot_notes .foot_links li a {
+          text-decoration: none;
+          color: #FFFFFF; }
+    footer .foot_notes .copyright {
+      color: #4B5057;
+      padding: 0;
+      text-align: center; }
+
+/******************DESKTOP STYLES ****************/
+@media only screen and (min-width: 45em) {
+  body {
+    background: #E9EDEF; }
+  .main_header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+    padding: 1em 0;
+    position: fixed;
+    box-shadow: 0px 40px 60px -20px rgba(0, 0, 0, 0.5); }
+    .main_header .diomedes {
+      padding: 0 5.5%;
+      letter-spacing: 12px;
+      font-size: 18px;
+      font-weight: 300; }
+    .main_header nav {
+      padding: 0 5.5%;
+      font-weight: 300;
+      letter-spacing: 1px; }
+      .main_header nav ul {
+        display: flex;
+        padding: 0;
+        justify-content: center; }
+      .main_header nav li {
+        margin: 0 8px;
+        list-style-type: none; }
+  #profile {
+    width: 100%;
+    padding-top: 3.5em; }
+    #profile ul {
+      width: 100%; }
+      #profile ul .profile_box {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        background: #FFFFFF;
+        margin-bottom: 7%;
+        box-shadow: 1px 10px 20px 0px rgba(75, 80, 87, 0.4); }
+        #profile ul .profile_box .profile_info {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          flex-direction: row-reverse;
+          background-color: #171524; }
+          #profile ul .profile_box .profile_info .profile_photo {
+            margin: 0;
+            width: 50%;
+            background-color: #FFFFFF; }
+            #profile ul .profile_box .profile_info .profile_photo img {
+              width: 100%; }
+          #profile ul .profile_box .profile_info .short_info {
+            margin-bottom: 36px;
+            margin: auto;
+            display: flex;
+            flex-direction: column; }
+            #profile ul .profile_box .profile_info .short_info h1 {
+              font-family: Oswald, sans-serif;
+              font-size: 2em;
+              margin: .5em;
+              color: #4B5057;
+              line-height: 1.7; }
+  section {
+    width: 100%;
+    /* PHOTO WALL STYLES */ }
+    section .about_me .my_facts {
+      width: 60%;
+      margin: 0 auto;
+      padding: 3.5em 0;
+      line-height: 1.8; }
+      section .about_me .my_facts h1 {
+        font-family: Oswald, sans-serif;
+        font-weight: 400;
+        font-size: 1.65em;
+        color: #171524; }
+      section .about_me .my_facts p {
+        font-family: Merriweather, georgia, serif;
+        margin-bottom: 1em;
+        font-size: 1em;
+        font-weight: 300;
+        color: #4B5057; } }

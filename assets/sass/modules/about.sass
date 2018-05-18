@@ -1,0 +1,261 @@
+// color variables
+$white: #FFFFFF
+$bg_color: #E9EDEF
+$main_color: #171524
+$second_color: #4B5057
+$high_color: orangered
+
+$main_font: Oswald, sans-serif
+$second_font: Merriweather, georgia, serif
+
+// antona and garamond fonts
+@import url(https://fonts.googleapis.com/css?family=Merriweather:300,400|Oswald:300,400)
+
+html
+  background-color: $main_color
+
+// MOBILE CSS STYLES BELOW
+body
+  background-color: $bg_color
+.main_header
+  width: 100%
+  background-color: $white
+  padding-bottom: .5em
+  .diomedes
+    padding: 5px 0 .5em 0
+    text-align: center
+    text-transform: uppercase
+    color: $main_color
+    letter-spacing: 9px
+    font-family: $main_font
+    font-size: 16px
+    font-weight: 200
+  nav
+    text-transform: uppercase
+    font-family: $main_font
+    font-size: 18px
+
+    ul
+      // display: flex
+      padding: 0
+      // justify-content: center
+      text-align: center
+    li
+      margin: .5em 0
+      list-style-type: none
+
+      a
+        color: $main_color
+        text-decoration: none
+        font-weight: 400
+      .contact_btn
+        border: 1px solid $main_color
+        padding: .2rem .8rem
+        transition: all 0.3s ease-in
+        &:hover
+          background: $main_color
+          color: $white
+        
+
+#profile
+  width: 100%
+  ul
+    width: 100%
+    .profile_box
+      display: flex
+      flex-direction: column
+      text-align: center
+      background: $white
+      margin-bottom: 7%
+      box-shadow: 1px 10px 20px 0px rgba($second_color, .4)
+      .profile_info
+        display: flex
+        justify-content: space-between
+        align-items: center
+        flex-direction: row-reverse
+        background-color: $main_color
+        .profile_photo
+          display: flex
+          flex-direction: column
+          margin: 0
+          width: 100%
+          img
+            width: 100%
+        .short_info
+          margin-bottom: 36px
+          display: none
+          h1
+            font-family: $main_font
+            font-size: 2em
+            margin: .5em
+            color: $second_color
+
+section
+  width: 100%
+  background-color: $white
+  text-align: center
+  padding: 7% 0 3% 0
+
+  .about_me
+    text-align: left
+    
+    .my_facts
+      width: 80%
+      margin: 0 auto
+      padding: 3.5em 0
+      line-height: 1.8
+      h1
+        font-family: $main_font
+        font-weight: 400
+        font-size: 1.65em
+        color: $main_color
+      p
+        font-family: $second_font
+        margin-bottom: 1em
+        font-size: 1em
+        font-weight: 300
+        color: $second_color
+
+  .album_head
+    h2
+      font-family: $main_font
+      font-weight: 400
+      font-size: 2.5em
+      color: $main_color
+    p
+      font-family: $second_font
+      font-size: 1em
+      font-weight: 300
+      padding: .8em 0 .5em 0
+      color: $second_color
+
+/* LIVE PENS STYLES */
+#photo_wall
+  width: 90%
+  background: $white
+  box-shadow: 1px 10px 20px 0px rgba($second_color, .5)
+  padding: 0
+  margin: 0 0 5% 5%
+  .photo_album
+    display: flex
+    flex-direction: column
+  img
+    width: 100%
+    margin-left: 0
+footer
+  background: $main_color
+  .foot_notes
+    padding: 5em 0
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    .foot_links
+      font-family: $main_font
+      text-transform: uppercase
+      font-size: 1.2em
+      display: flex
+      flex-wrap: wrap
+      justify-content: center
+      align-items: center
+      li
+        padding: 1em .5em
+        a
+          text-decoration: none
+          color: $white
+
+    .copyright
+      color: $second_color
+      padding: 0
+      text-align: center
+
+/******************DESKTOP STYLES ****************/
+@media only screen and (min-width: 45em)
+  body
+    background: $bg_color
+  .main_header
+    width: 100%
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    background-color: $white
+    padding: 1em 0
+    position: fixed
+    box-shadow: 0px 40px 60px -20px rgba(0, 0, 0, 0.5)
+    .diomedes
+      padding: 0 5.5%
+      letter-spacing: 12px
+      font-size: 18px
+      font-weight: 300
+    nav
+      padding: 0 5.5%
+      font-weight: 300
+      letter-spacing: 1px
+      ul
+        display: flex
+        padding: 0
+        justify-content: center
+      li
+        margin: 0 8px
+        list-style-type: none
+
+  #profile
+    width: 100%
+    padding-top: 3.5em
+
+    ul
+      width: 100%
+      .profile_box
+        display: flex
+        flex-direction: column
+        text-align: center
+        background: $white
+        margin-bottom: 7%
+        box-shadow: 1px 10px 20px 0px rgba($second_color, .4)
+        .profile_info
+          display: flex
+          justify-content: space-between
+          align-items: center
+          flex-direction: row-reverse
+          background-color: $main_color
+          .profile_photo
+            margin: 0
+            width: 50%
+            background-color: $white
+            img
+              width: 100%
+          .short_info
+            margin-bottom: 36px
+            margin: auto
+            display: flex
+            flex-direction: column
+            h1
+              font-family: $main_font
+              font-size: 2em
+              margin: .5em
+              color: $second_color
+              line-height: 1.7
+
+  section
+    width: 100%
+    .about_me
+      .my_facts
+        width: 60%
+        margin: 0 auto
+        padding: 3.5em 0
+        line-height: 1.8
+        h1
+          font-family: $main_font
+          font-weight: 400
+          font-size: 1.65em
+          color: $main_color
+        p
+          font-family: $second_font
+          margin-bottom: 1em
+          font-size: 1em
+          font-weight: 300
+          color: $second_color
+
+    /* PHOTO WALL STYLES */
+
+
